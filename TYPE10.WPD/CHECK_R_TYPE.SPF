@@ -1,0 +1,704 @@
+;***************************************************************
+;MACHINE                     :SMW24962
+;DRAW  NR.                   :6866 449/6866 450
+;NAME  OF  THE  PART         :BMW  G38
+;PROGRAMER                   :XZR
+;DATE                        :2016.03.22
+;***************************************************************
+;***************************************************************
+;** CHECK DEFAULT RTYPE DONE ON BMW G38 MACHINING PROGRAM   ***
+;***************************************************************
+
+; No difference allowed here
+
+; Checking all R parameters used in the program
+
+;------------------LH---------------------
+
+N10 IF R401<>-47.91 GOTOF ERROR_R401
+N20 IF R402<>165 GOTOF ERROR_R402
+N30 IF R403<>-38.27 GOTOF ERROR_R403
+N40 IF R407<>0 GOTOF ERROR_R407
+N50 IF R408<>312 GOTOF ERROR_R408
+N60 IF R409<>312 GOTOF ERROR_R409
+
+N70 IF R411<>4.16 GOTOF ERROR_R411
+N80 IF R412<>6.69 GOTOF ERROR_R412
+N90 IF R413<>175.85 GOTOF ERROR_R413
+N100 IF R417<>67.48 GOTOF ERROR_R417
+N110 IF R418<>84.5 GOTOF ERROR_R418
+N120 IF R419<>84.5 GOTOF ERROR_R419
+
+N130 IF R421<>46.89 GOTOF ERROR_R421
+N140 IF R422<>164.66 GOTOF ERROR_R422
+N150 IF R423<>40.92 GOTOF ERROR_R423
+N160 IF R427<>0.49 GOTOF ERROR_R427
+N170 IF R428<>130.49 GOTOF ERROR_R428
+N180 IF R429<>130.49 GOTOF ERROR_R429
+
+N190 IF R431<>-R401 GOTOF ERROR_R431
+N200 IF R432<>R402 GOTOF ERROR_R432
+N210 IF R433<>-R403 GOTOF ERROR_R433
+N220 IF R437<>0 GOTOF ERROR_R437
+N230 IF R438<>132 GOTOF ERROR_R438
+N240 IF R439<>132 GOTOF ERROR_R439
+
+N250 IF R441<>-0.84 GOTOF ERROR_R441
+N260 IF R442<>90.87 GOTOF ERROR_R442
+N270 IF R443<>150.76 GOTOF ERROR_R443
+N280 IF R447<>79.31GOTOF ERROR_R447
+N290 IF R448<>261.4 GOTOF ERROR_R448
+N300 IF R449<>261.4 GOTOF ERROR_R449
+
+N310 IF R451<>-10.9 GOTOF ERROR_R451
+N320 IF R452<>-131.59 GOTOF ERROR_R452
+N330 IF R453<>116.41 GOTOF ERROR_R453
+N340 IF R457<>118.41GOTOF ERROR_R457
+N350 IF R458<>70.38 GOTOF ERROR_R458
+N360 IF R459<>70.38 GOTOF ERROR_R459
+
+N370 IF R461<>-0.6 GOTOF ERROR_R461
+N380 IF R462<>122.39 GOTOF ERROR_R462
+N390 IF R463<>126.51 GOTOF ERROR_R463
+N400 IF R467<>66.34 GOTOF ERROR_R467
+N410 IF R468<>261.18 GOTOF ERROR_R468
+N420 IF R469<>261.18 GOTOF ERROR_R469
+
+N430 IF R471<>51.53 GOTOF ERROR_R471
+N440 IF R472<>162.01 GOTOF ERROR_R472
+N450 IF R473<>45.63 GOTOF ERROR_R473
+N460 IF R477<>4.34 GOTOF ERROR_R477
+N470 IF R478<>137.79 GOTOF ERROR_R478
+N480 IF R479<>137.79 GOTOF ERROR_R479
+
+N490 IF R481<>-57.97 GOTOF ERROR_R481
+N500 IF R482<>166 GOTOF ERROR_R482
+N510 IF R483<>-8.2 GOTOF ERROR_R483
+N520 IF R487<>4.08 GOTOF ERROR_R487
+N530 IF R488<>331.6 GOTOF ERROR_R488
+N540 IF R489<>331.6 GOTOF ERROR_R489
+
+N550 IF R491<>20.9 GOTOF ERROR_R491
+N560 IF R492<>120.99 GOTOF ERROR_R492
+N570 IF R493<>126.14 GOTOF ERROR_R493
+N580 IF R497<>65.45 GOTOF ERROR_R497
+N590 IF R498<>240.69 GOTOF ERROR_R498
+N600 IF R499<>240.69 GOTOF ERROR_R499
+
+N610 IF R501<>60.48 GOTOF ERROR_R501
+N620 IF R502<>87.92 GOTOF ERROR_R502
+N630 IF R503<>139.99 GOTOF ERROR_R503
+N640 IF R507<>54.36 GOTOF ERROR_R507
+N650 IF R508<>161.11 GOTOF ERROR_R508
+N660 IF R509<>161.11 GOTOF ERROR_R509
+
+N670 IF R511<>-61.18 GOTOF ERROR_R511
+N680 IF R512<>-108.41 GOTOF ERROR_R512
+N690 IF R513<>124.46 GOTOF ERROR_R513
+N700 IF R517<>132.48 GOTOF ERROR_R517
+N710 IF R518<>346.78 GOTOF ERROR_R518
+N720 IF R519<>346.78 GOTOF ERROR_R519
+
+N730 IF R521<>-R401 GOTOF ERROR_R521
+N740 IF R522<>R402 GOTOF ERROR_R522
+N750 IF R523<>-R403 GOTOF ERROR_R523
+N760 IF R527<>0 GOTOF ERROR_R527
+N770 IF R528<>132 GOTOF ERROR_R528
+N780 IF R529<>132 GOTOF ERROR_R529
+
+;---------------------RH-------------------------
+
+N790 IF R601<>45.24 GOTOF ERROR_R601
+N800 IF R602<>165 GOTOF ERROR_R602
+N810 IF R603<>-35.3 GOTOF ERROR_R603
+N820 IF R607<>0 GOTOF ERROR_R607
+N830 IF R608<>48 GOTOF ERROR_R608
+N840 IF R609<>48 GOTOF ERROR_R609
+
+N850 IF R611<>-14.1 GOTOF ERROR_R611
+N860 IF R612<>1.5 GOTOF ERROR_R612
+N870 IF R613<>174.12 GOTOF ERROR_R613
+N880 IF R617<>70.88 GOTOF ERROR_R617
+N890 IF R618<>265.81 GOTOF ERROR_R618
+N900 IF R619<>265.81 GOTOF ERROR_R619
+
+N910 IF R621<>-44.32 GOTOF ERROR_R621
+N920 IF R622<>164.6 GOTOF ERROR_R622
+N930 IF R623<>37.72 GOTOF ERROR_R623
+N940 IF R627<>0.62 GOTOF ERROR_R627
+N950 IF R628<>229.46 GOTOF ERROR_R628
+N960 IF R629<>229.46 GOTOF ERROR_R629
+
+N970 IF R631<>-R601 GOTOF ERROR_R631
+N980 IF R632<>R602 GOTOF ERROR_R632
+N990 IF R633<>-R603 GOTOF ERROR_R633
+N1000 IF R637<>0 GOTOF ERROR_R637
+N1010 IF R638<>228 GOTOF ERROR_R638
+N1020 IF R639<>228 GOTOF ERROR_R639
+
+N1030 IF R641<>-10.65 GOTOF ERROR_R641
+N1040 IF R642<>96.9 GOTOF ERROR_R642
+N1050 IF R643<>144.96 GOTOF ERROR_R643
+N1060 IF R647<>75.1 GOTOF ERROR_R647
+N1070 IF R648<>110.73 GOTOF ERROR_R648
+N1080 IF R649<>110.73 GOTOF ERROR_R649
+
+N1090 IF R651<>13.25 GOTOF ERROR_R651
+N1100 IF R652<>-136.48 GOTOF ERROR_R652
+N1110 IF R653<>108.23 GOTOF ERROR_R653
+N1120 IF R657<>122.89 GOTOF ERROR_R657
+N1130 IF R658<>293.39 GOTOF ERROR_R658
+N1140 IF R659<>293.39 GOTOF ERROR_R659
+
+N1150 IF R661<>-4.92 GOTOF ERROR_R661
+N1160 IF R662<>127.34 GOTOF ERROR_R662
+N1170 IF R663<>119.49 GOTOF ERROR_R663
+N1180 IF R667<>62.29 GOTOF ERROR_R667
+N1190 IF R668<>104.96 GOTOF ERROR_R668
+N1200 IF R669<>104.96 GOTOF ERROR_R669
+
+N1210 IF R671<>-48.76 GOTOF ERROR_R671
+N1220 IF R672<>162.62 GOTOF ERROR_R672
+N1230 IF R673<>41.17 GOTOF ERROR_R673
+N1240 IF R677<>3.82 GOTOF ERROR_R677
+N1250 IF R678<>221.85 GOTOF ERROR_R678
+N1260 IF R679<>221.85 GOTOF ERROR_R679
+
+N1270 IF R681<>54.33 GOTOF ERROR_R681
+N1280 IF R682<>166.02 GOTOF ERROR_R682
+N1290 IF R683<>-1.87 GOTOF ERROR_R683
+N1300 IF R687<>5.74 GOTOF ERROR_R687
+N1310 IF R688<>28.81 GOTOF ERROR_R688
+N1320 IF R689<>28.81 GOTOF ERROR_R689
+
+N1330 IF R691<>-21.67 GOTOF ERROR_R691
+N1340 IF R692<>127.13 GOTOF ERROR_R692
+N1350 IF R693<>117.84 GOTOF ERROR_R693
+N1360 IF R697<>60.68 GOTOF ERROR_R697
+N1370 IF R698<>122.23 GOTOF ERROR_R698
+N1380 IF R699<>122.23 GOTOF ERROR_R699
+
+N1390 IF R701<>-57.29 GOTOF ERROR_R701
+N1400 IF R702<>99.72 GOTOF ERROR_R702
+N1410 IF R703<>131.50 GOTOF ERROR_R703
+N1420 IF R707<>51.71 GOTOF ERROR_R707
+N1430 IF R708<>193.24 GOTOF ERROR_R708
+N1440 IF R709<>193.24 GOTOF ERROR_R709
+
+N1450 IF R711<>57.37 GOTOF ERROR_R711
+N1460 IF R712<>-118.33 GOTOF ERROR_R712
+N1470 IF R713<>114.99 GOTOF ERROR_R713
+N1480 IF R717<>135.48 GOTOF ERROR_R717
+N1490 IF R718<>9.07 GOTOF ERROR_R718
+N1500 IF R719<>9.07 GOTOF ERROR_R719
+
+N1510 IF R721<>-R601 GOTOF ERROR_R721
+N1520 IF R722<>R602 GOTOF ERROR_R722
+N1530 IF R723<>-R603 GOTOF ERROR_R723
+N1540 IF R727<>0 GOTOF ERROR_R727
+N1550 IF R728<>228 GOTOF ERROR_R728
+N1560 IF R729<>228 GOTOF ERROR_R729
+
+; If arrived here, then return to master program
+N1570 RET
+
+;-----------------------LH----------------------
+
+; List of all alarms
+N1580 ERROR_R401:  MSG("Parameter R401 has been changed. Nominal is -47.91. Thanks to put it back.")
+N1590 STOPRE
+N1600 GOTOB ERROR_R401
+N1610 ERROR_R402:  MSG("Parameter R402 has been changed. Nominal is 165. Thanks to put it back.")
+N1620 STOPRE
+N1630 GOTOB ERROR_R402
+N1640 ERROR_R403:  MSG("Parameter R403 has been changed. Nominal is -38.27. Thanks to put it back.")
+N1650 STOPRE
+N1660 GOTOB ERROR_R403
+N1670 ERROR_R407:  MSG("Parameter R407 has been changed. Nominal is 0. Thanks to put it back.")
+N1680 STOPRE
+N1690 GOTOB ERROR_R407
+N1700 ERROR_R408:  MSG("Parameter R408 has been changed. Nominal is 312. Thanks to put it back.")
+N1710 STOPRE
+N1720 GOTOB ERROR_R408
+N1730 ERROR_R409:  MSG("Parameter R409 has been changed. Nominal is 312. Thanks to put it back.")
+N1740 STOPRE
+N1750 GOTOB ERROR_R409
+
+N1760 ERROR_R411:  MSG("Parameter R411 has been changed. Nominal is 4.16. Thanks to put it back.")
+N1770 STOPRE
+N1780 GOTOB ERROR_R411
+N1790 ERROR_R412:  MSG("Parameter R412 has been changed. Nominal is 6.69. Thanks to put it back.")
+N1800 STOPRE
+N1810 GOTOB ERROR_R412
+N1820 ERROR_R413:  MSG("Parameter R413 has been changed. Nominal is 175.85. Thanks to put it back.")
+N1830 STOPRE
+N1840 GOTOB ERROR_R413
+N1850 ERROR_R417:  MSG("Parameter R417 has been changed. Nominal is 67.48. Thanks to put it back.")
+N1860 STOPRE
+N1870 GOTOB ERROR_R417
+N1880 ERROR_R418:  MSG("Parameter R418 has been changed. Nominal is 84.5. Thanks to put it back.")
+N1890 STOPRE
+N1900 GOTOB ERROR_R418
+N1910 ERROR_R419:  MSG("Parameter R419 has been changed. Nominal is 84.5. Thanks to put it back.")
+N1920 STOPRE
+N1930 GOTOB ERROR_R419
+
+N1940 ERROR_R421:  MSG("Parameter R421 has been changed. Nominal is 46.89. Thanks to put it back.")
+N1950 STOPRE
+N1960 GOTOB ERROR_R421
+N1970 ERROR_R422:  MSG("Parameter R422 has been changed. Nominal is 164.66. Thanks to put it back.")
+N1980 STOPRE
+N1990 GOTOB ERROR_R422
+N2000 ERROR_R423:  MSG("Parameter R423 has been changed. Nominal is 40.92. Thanks to put it back.")
+N2010 STOPRE
+N2020 GOTOB ERROR_R423
+N2030 ERROR_R427:  MSG("Parameter R427 has been changed. Nominal is 0.49. Thanks to put it back.")
+N2040 STOPRE
+N2050 GOTOB ERROR_R427
+N2060 ERROR_R428:  MSG("Parameter R428 has been changed. Nominal is 130.49. Thanks to put it back.")
+N2070 STOPRE
+N2080 GOTOB ERROR_R428
+N2090 ERROR_R429:  MSG("Parameter R429 has been changed. Nominal is 130.49. Thanks to put it back.")
+N2100 STOPRE
+N2110 GOTOB ERROR_R429
+
+N2120 ERROR_R431:  MSG("Parameter R431 has been changed. Nominal is -R401. Thanks to put it back.")
+N2130 STOPRE
+N2140 GOTOB ERROR_R431
+N2150 ERROR_R432:  MSG("Parameter R432 has been changed. Nominal is R402. Thanks to put it back.")
+N2160 STOPRE
+N2170 GOTOB ERROR_R432
+N2180 ERROR_R433:  MSG("Parameter R433 has been changed. Nominal is -R403. Thanks to put it back.")
+N2190 STOPRE
+N2200 GOTOB ERROR_R433
+N2210 ERROR_R437:  MSG("Parameter R437 has been changed. Nominal is 0. Thanks to put it back.")
+N2220 STOPRE
+N2230 GOTOB ERROR_R437
+N2240 ERROR_R438:  MSG("Parameter R438 has been changed. Nominal is 132. Thanks to put it back.")
+N2250 STOPRE
+N2260 GOTOB ERROR_R438
+N2270 ERROR_R439:  MSG("Parameter R439 has been changed. Nominal is 132. Thanks to put it back.")
+N2280 STOPRE
+N2290 GOTOB ERROR_R439
+
+N2300 ERROR_R441:  MSG("Parameter R441 has been changed. Nominal is -0.84. Thanks to put it back.")
+N2310 STOPRE
+N2320 GOTOB ERROR_R441
+N2330 ERROR_R442:  MSG("Parameter R442 has been changed. Nominal is 90.87. Thanks to put it back.")
+N2340 STOPRE
+N2350 GOTOB ERROR_R442
+N2360 ERROR_R443:  MSG("Parameter R443 has been changed. Nominal is 150.76. Thanks to put it back.")
+N2370 STOPRE
+N2380 GOTOB ERROR_R443
+N2390 ERROR_R447:  MSG("Parameter R447 has been changed. Nominal is 79.31. Thanks to put it back.")
+N2400 STOPRE
+N2410 GOTOB ERROR_R447
+N2420 ERROR_R448:  MSG("Parameter R448 has been changed. Nominal is 261.4. Thanks to put it back.")
+N2430 STOPRE
+N2440 GOTOB ERROR_R448
+N2450 ERROR_R449:  MSG("Parameter R449 has been changed. Nominal is 261.4. Thanks to put it back.")
+N2460 STOPRE
+N2470 GOTOB ERROR_R449
+
+N2480 ERROR_R451:  MSG("Parameter R451 has been changed. Nominal is -10.9. Thanks to put it back.")
+N2490 STOPRE
+N2500 GOTOB ERROR_R451
+N2510 ERROR_R452:  MSG("Parameter R452 has been changed. Nominal is -131.59. Thanks to put it back.")
+N2520 STOPRE
+N2530 GOTOB ERROR_R452
+N2540 ERROR_R453:  MSG("Parameter R453 has been changed. Nominal is 116.41. Thanks to put it back.")
+N2550 STOPRE
+N2560 GOTOB ERROR_R453
+N2570 ERROR_R457:  MSG("Parameter R457 has been changed. Nominal is 118.41. Thanks to put it back.")
+N2580 STOPRE
+N2590 GOTOB ERROR_R457
+N2600 ERROR_R458:  MSG("Parameter R458 has been changed. Nominal is 70.38. Thanks to put it back.")
+N2610 STOPRE
+N2620 GOTOB ERROR_R458
+N2630 ERROR_R459:  MSG("Parameter R459 has been changed. Nominal is 70.38. Thanks to put it back.")
+N2640 STOPRE
+N2650 GOTOB ERROR_R459
+
+N2660 ERROR_R461:  MSG("Parameter R461 has been changed. Nominal is -0.6. Thanks to put it back.")
+N2670 STOPRE
+N2680 GOTOB ERROR_R461
+N2690 ERROR_R462:  MSG("Parameter R462 has been changed. Nominal is 122.39. Thanks to put it back.")
+N2700 STOPRE
+N2710 GOTOB ERROR_R462
+N2720 ERROR_R463:  MSG("Parameter R463 has been changed. Nominal is 126.51. Thanks to put it back.")
+N2730 STOPRE
+N2740 GOTOB ERROR_R463
+N2750 ERROR_R467:  MSG("Parameter R467 has been changed. Nominal is 66.34. Thanks to put it back.")
+N2760 STOPRE
+N2770 GOTOB ERROR_R467
+N2780 ERROR_R468:  MSG("Parameter R468 has been changed. Nominal is 261.18. Thanks to put it back.")
+N2790 STOPRE
+N2800 GOTOB ERROR_R468
+N2810 ERROR_R469:  MSG("Parameter R469 has been changed. Nominal is 261.18. Thanks to put it back.")
+N2820 STOPRE
+N2830 GOTOB ERROR_R469
+
+N2840 ERROR_R471:  MSG("Parameter R471 has been changed. Nominal is 51.53. Thanks to put it back.")
+N2850 STOPRE
+N2860 GOTOB ERROR_R471
+N2870 ERROR_R472:  MSG("Parameter R472 has been changed. Nominal is 162.01. Thanks to put it back.")
+N2880 STOPRE
+N2890 GOTOB ERROR_R472
+N2900 ERROR_R473:  MSG("Parameter R473 has been changed. Nominal is 45.63. Thanks to put it back.")
+N2910 STOPRE
+N2920 GOTOB ERROR_R473
+N2930 ERROR_R477:  MSG("Parameter R477 has been changed. Nominal is 4.34. Thanks to put it back.")
+N2940 STOPRE
+N2950 GOTOB ERROR_R477
+N2960 ERROR_R478:  MSG("Parameter R478 has been changed. Nominal is 137.79. Thanks to put it back.")
+N2970 STOPRE
+N2980 GOTOB ERROR_R478
+N2990 ERROR_R479:  MSG("Parameter R479 has been changed. Nominal is 137.79. Thanks to put it back.")
+N3000 STOPRE
+N3010 GOTOB ERROR_R479
+
+N3020 ERROR_R481:  MSG("Parameter R481 has been changed. Nominal is -57.97. Thanks to put it back.")
+N3030 STOPRE
+N3040 GOTOB ERROR_R481
+N3050 ERROR_R482:  MSG("Parameter R482 has been changed. Nominal is 166. Thanks to put it back.")
+N3060 STOPRE
+N3070 GOTOB ERROR_R482
+N3080 ERROR_R483:  MSG("Parameter R483 has been changed. Nominal is -8.2. Thanks to put it back.")
+N3090 STOPRE
+N3100 GOTOB ERROR_R483
+N3110 ERROR_R487:  MSG("Parameter R487 has been changed. Nominal is 4.08. Thanks to put it back.")
+N3120 STOPRE
+N3130 GOTOB ERROR_R487
+N3140 ERROR_R488:  MSG("Parameter R488 has been changed. Nominal is 331.6. Thanks to put it back.")
+N3150 STOPRE
+N3160 GOTOB ERROR_R488
+N3170 ERROR_R489:  MSG("Parameter R489 has been changed. Nominal is 331.6. Thanks to put it back.")
+N3180 STOPRE
+N3190 GOTOB ERROR_R489
+
+N3200 ERROR_R491:  MSG("Parameter R491 has been changed. Nominal is 20.9. Thanks to put it back.")
+N3210 STOPRE
+N3220 GOTOB ERROR_R491
+N3230 ERROR_R492:  MSG("Parameter R492 has been changed. Nominal is 120.99. Thanks to put it back.")
+N3240 STOPRE
+N3250 GOTOB ERROR_R492
+N3260 ERROR_R493:  MSG("Parameter R493 has been changed. Nominal is  126.14. Thanks to put it back.")
+N3270 STOPRE
+N3280 GOTOB ERROR_R493
+N3290 ERROR_R497:  MSG("Parameter R497 has been changed. Nominal is 65.45. Thanks to put it back.")
+N3300 STOPRE
+N3310 GOTOB ERROR_R497
+N3320 ERROR_R498:  MSG("Parameter R498 has been changed. Nominal is 240.69. Thanks to put it back.")
+N3330 STOPRE
+N3340 GOTOB ERROR_R498
+N3350 ERROR_R499:  MSG("Parameter R499 has been changed. Nominal is 240.69. Thanks to put it back.")
+N3360 STOPRE
+N3370 GOTOB ERROR_R499
+
+N3380 ERROR_R501:  MSG("Parameter R501 has been changed. Nominal is 60.48. Thanks to put it back.")
+N3390 STOPRE
+N3400 GOTOB ERROR_R501
+N3410 ERROR_R502:  MSG("Parameter R502 has been changed. Nominal is 87.92. Thanks to put it back.")
+N3420 STOPRE
+N3430 GOTOB ERROR_R502
+N3440 ERROR_R503:  MSG("Parameter R503 has been changed. Nominal is  139.99. Thanks to put it back.")
+N3450 STOPRE
+N3460 GOTOB ERROR_R503
+N3470 ERROR_R507:  MSG("Parameter R507 has been changed. Nominal is 54.36. Thanks to put it back.")
+N3480 STOPRE
+N3490 GOTOB ERROR_R507
+N3500 ERROR_R508:  MSG("Parameter R508 has been changed. Nominal is 161.11. Thanks to put it back.")
+N3510 STOPRE
+N3520 GOTOB ERROR_R508
+N3530 ERROR_R509:  MSG("Parameter R509 has been changed. Nominal is 161.11. Thanks to put it back.")
+N3540 STOPRE
+N3550 GOTOB ERROR_R509
+
+N3560 ERROR_R511:  MSG("Parameter R511 has been changed. Nominal is -61.18. Thanks to put it back.")
+N3570 STOPRE
+N3580 GOTOB ERROR_R511
+N3590 ERROR_R512:  MSG("Parameter R512 has been changed. Nominal is -108.41. Thanks to put it back.")
+N3600 STOPRE
+N3610 GOTOB ERROR_R512
+N3620 ERROR_R513:  MSG("Parameter R513 has been changed. Nominal is  124.46. Thanks to put it back.")
+N3630 STOPRE
+N3640 GOTOB ERROR_R513
+N3650 ERROR_R517:  MSG("Parameter R517 has been changed. Nominal is 132.48. Thanks to put it back.")
+N3660 STOPRE
+N3670 GOTOB ERROR_R517
+N3680 ERROR_R518:  MSG("Parameter R518 has been changed. Nominal is 346.78. Thanks to put it back.")
+N3690 STOPRE
+N3700 GOTOB ERROR_R518
+N3710 ERROR_R519:  MSG("Parameter R519 has been changed. Nominal is 346.78. Thanks to put it back.")
+N3720 STOPRE
+N3730 GOTOB ERROR_R519
+
+N3740 ERROR_R521:  MSG("Parameter R521 has been changed. Nominal is -R401. Thanks to put it back.")
+N3750 STOPRE
+N3760 GOTOB ERROR_R521
+N3770 ERROR_R522:  MSG("Parameter R522 has been changed. Nominal is R402. Thanks to put it back.")
+N3780 STOPRE
+N3790 GOTOB ERROR_R522
+N3800 ERROR_R523:  MSG("Parameter R523 has been changed. Nominal is  -R403. Thanks to put it back.")
+N3810 STOPRE
+N3820 GOTOB ERROR_R523
+N3830 ERROR_R527:  MSG("Parameter R527 has been changed. Nominal is 0. Thanks to put it back.")
+N3840 STOPRE
+N3850 GOTOB ERROR_R527
+N3860 ERROR_R528:  MSG("Parameter R528 has been changed. Nominal is 132. Thanks to put it back.")
+N3870 STOPRE
+N3880 GOTOB ERROR_R528
+N3890 ERROR_R529:  MSG("Parameter R529 has been changed. Nominal is 132. Thanks to put it back.")
+N3900 STOPRE
+N3910 GOTOB ERROR_R529
+
+;-------------------------RH----------------------------
+N3920 ERROR_R601:  MSG("Parameter R601 has been changed. Nominal is 45.24. Thanks to put it back.")
+N3930 STOPRE
+N3940 GOTOB ERROR_R601
+N3950 ERROR_R602:  MSG("Parameter R602 has been changed. Nominal is 165. Thanks to put it back.")
+N3960 STOPRE
+N3970 GOTOB ERROR_R602
+N3980 ERROR_R603:  MSG("Parameter R603 has been changed. Nominal is  -35.3. Thanks to put it back.")
+N3990 STOPRE
+N4000 GOTOB ERROR_R603
+N4010 ERROR_R607:  MSG("Parameter R607 has been changed. Nominal is 0. Thanks to put it back.")
+N4020 STOPRE
+N4030 GOTOB ERROR_R607
+N4040 ERROR_R608:  MSG("Parameter R608 has been changed. Nominal is 48. Thanks to put it back.")
+N4050 STOPRE
+N4060 GOTOB ERROR_R608
+N4070 ERROR_R609:  MSG("Parameter R609 has been changed. Nominal is 48. Thanks to put it back.")
+N4080 STOPRE
+N4090 GOTOB ERROR_R609
+
+N4100 ERROR_R611:  MSG("Parameter R611 has been changed. Nominal is -14.1. Thanks to put it back.")
+N4110 STOPRE
+N4120 GOTOB ERROR_R611
+N4130 ERROR_R612:  MSG("Parameter R612 has been changed. Nominal is 1.5. Thanks to put it back.")
+N4140 STOPRE
+N4150 GOTOB ERROR_R612
+N4160 ERROR_R613:  MSG("Parameter R613 has been changed. Nominal is  174.12. Thanks to put it back.")
+N4170 STOPRE
+N4180 GOTOB ERROR_R613
+N4190 ERROR_R617:  MSG("Parameter R617 has been changed. Nominal is 70.88. Thanks to put it back.")
+N4200 STOPRE
+N4210 GOTOB ERROR_R617
+N4220 ERROR_R618:  MSG("Parameter R618 has been changed. Nominal is 265.81. Thanks to put it back.")
+N4230 STOPRE
+N4240 GOTOB ERROR_R618
+N4250 ERROR_R619:  MSG("Parameter R619 has been changed. Nominal is 265.81. Thanks to put it back.")
+N4260 STOPRE
+N4270 GOTOB ERROR_R619
+
+N4280 ERROR_R621:  MSG("Parameter R621 has been changed. Nominal is -44.32. Thanks to put it back.")
+N4290 STOPRE
+N4300 GOTOB ERROR_R621
+N4310 ERROR_R622:  MSG("Parameter R622 has been changed. Nominal is 164.6. Thanks to put it back.")
+N4320 STOPRE
+N4330 GOTOB ERROR_R622
+N4340 ERROR_R623:  MSG("Parameter R623 has been changed. Nominal is  37.72. Thanks to put it back.")
+N4350 STOPRE
+N4360 GOTOB ERROR_R623
+N4370 ERROR_R627:  MSG("Parameter R627 has been changed. Nominal is 0.62. Thanks to put it back.")
+N4380 STOPRE
+N4390 GOTOB ERROR_R627
+N4400 ERROR_R628:  MSG("Parameter R628 has been changed. Nominal is 229.46. Thanks to put it back.")
+N4410 STOPRE
+N4420 GOTOB ERROR_R628
+N4430 ERROR_R629:  MSG("Parameter R629 has been changed. Nominal is 229.46. Thanks to put it back.")
+N4440 STOPRE
+N4450 GOTOB ERROR_R629
+
+N4460 ERROR_R631:  MSG("Parameter R631 has been changed. Nominal is -R601. Thanks to put it back.")
+N4470 STOPRE
+N4480 GOTOB ERROR_R631
+N4490 ERROR_R632:  MSG("Parameter R632 has been changed. Nominal is R602. Thanks to put it back.")
+N4500 STOPRE
+N4510 GOTOB ERROR_R632
+N4520 ERROR_R633:  MSG("Parameter R633 has been changed. Nominal is  -R603. Thanks to put it back.")
+N4530 STOPRE
+N4540 GOTOB ERROR_R633
+N4550 ERROR_R637:  MSG("Parameter R637 has been changed. Nominal is 0. Thanks to put it back.")
+N4560 STOPRE
+N4570 GOTOB ERROR_R637
+N4580 ERROR_R638:  MSG("Parameter R638 has been changed. Nominal is 228. Thanks to put it back.")
+N4590 STOPRE
+N4600 GOTOB ERROR_R638
+N4610 ERROR_R639:  MSG("Parameter R639 has been changed. Nominal is 228. Thanks to put it back.")
+N4620 STOPRE
+N4630 GOTOB ERROR_R639
+
+N4640 ERROR_R641:  MSG("Parameter R641 has been changed. Nominal is -10.65. Thanks to put it back.")
+N4650 STOPRE
+N4660 GOTOB ERROR_R641
+N4670 ERROR_R642:  MSG("Parameter R642 has been changed. Nominal is 96.9. Thanks to put it back.")
+N4680 STOPRE
+N4690 GOTOB ERROR_R642
+N4700 ERROR_R643:  MSG("Parameter R643 has been changed. Nominal is  144.96. Thanks to put it back.")
+N4710 STOPRE
+N4720 GOTOB ERROR_R643
+N4730 ERROR_R647:  MSG("Parameter R647 has been changed. Nominal is 75.1. Thanks to put it back.")
+N4740 STOPRE
+N4750 GOTOB ERROR_R647
+N4760 ERROR_R648:  MSG("Parameter R648 has been changed. Nominal is 110.73. Thanks to put it back.")
+N4770 STOPRE
+N4780 GOTOB ERROR_R648
+N4790 ERROR_R649:  MSG("Parameter R649 has been changed. Nominal is 110.73. Thanks to put it back.")
+N4800 STOPRE
+N4810 GOTOB ERROR_R649
+
+N4820 ERROR_R651:  MSG("Parameter R651 has been changed. Nominal is 13.25. Thanks to put it back.")
+N4830 STOPRE
+N4840 GOTOB ERROR_R651
+N4850 ERROR_R652:  MSG("Parameter R652 has been changed. Nominal is -136.48. Thanks to put it back.")
+N4860 STOPRE
+N4870 GOTOB ERROR_R652
+N4880 ERROR_R653:  MSG("Parameter R653 has been changed. Nominal is  108.23. Thanks to put it back.")
+N4890 STOPRE
+N4900 GOTOB ERROR_R653
+N4910 ERROR_R657:  MSG("Parameter R657 has been changed. Nominal is 122.89. Thanks to put it back.")
+N4920 STOPRE
+N4930 GOTOB ERROR_R657
+N4940 ERROR_R658:  MSG("Parameter R658 has been changed. Nominal is 293.39. Thanks to put it back.")
+N4950 STOPRE
+N4960 GOTOB ERROR_R658
+N4970 ERROR_R659:  MSG("Parameter R659 has been changed. Nominal is 293.39. Thanks to put it back.")
+N4980 STOPRE
+N4990 GOTOB ERROR_R659
+
+N5000 ERROR_R661:  MSG("Parameter R661 has been changed. Nominal is -4.92. Thanks to put it back.")
+N5010 STOPRE
+N5020 GOTOB ERROR_R661
+N5030 ERROR_R662:  MSG("Parameter R662 has been changed. Nominal is 127.34. Thanks to put it back.")
+N5040 STOPRE
+N5050 GOTOB ERROR_R662
+N5060 ERROR_R663:  MSG("Parameter R663 has been changed. Nominal is  119.49. Thanks to put it back.")
+N5070 STOPRE
+N5080 GOTOB ERROR_R663
+N5090 ERROR_R667:  MSG("Parameter R667 has been changed. Nominal is 62.29. Thanks to put it back.")
+N5100 STOPRE
+N5110 GOTOB ERROR_R667
+N5120 ERROR_R668:  MSG("Parameter R668 has been changed. Nominal is 104.96. Thanks to put it back.")
+N5130 STOPRE
+N5140 GOTOB ERROR_R668
+N5150 ERROR_R669:  MSG("Parameter R669 has been changed. Nominal is 104.96. Thanks to put it back.")
+N5160 STOPRE
+N5170 GOTOB ERROR_R669
+
+N5180 ERROR_R671:  MSG("Parameter R671 has been changed. Nominal is -48.76. Thanks to put it back.")
+N5190 STOPRE
+N5200 GOTOB ERROR_R671
+N5210 ERROR_R672:  MSG("Parameter R672 has been changed. Nominal is 162.62. Thanks to put it back.")
+N5220 STOPRE
+N5230 GOTOB ERROR_R672
+N5240 ERROR_R673:  MSG("Parameter R673 has been changed. Nominal is  41.17. Thanks to put it back.")
+N5250 STOPRE
+N5260 GOTOB ERROR_R673
+N5270 ERROR_R677:  MSG("Parameter R677 has been changed. Nominal is 3.82. Thanks to put it back.")
+N5280 STOPRE
+N5290 GOTOB ERROR_R677
+N5300 ERROR_R678:  MSG("Parameter R678 has been changed. Nominal is 221.85. Thanks to put it back.")
+N5310 STOPRE
+N5320 GOTOB ERROR_R678
+N5330 ERROR_R679:  MSG("Parameter R669 has been changed. Nominal is 221.85. Thanks to put it back.")
+N5340 STOPRE
+N5350 GOTOB ERROR_R679
+
+N5360 ERROR_R681:  MSG("Parameter R681 has been changed. Nominal is 54.33. Thanks to put it back.")
+N5370 STOPRE
+N5380 GOTOB ERROR_R681
+N5390 ERROR_R682:  MSG("Parameter R682 has been changed. Nominal is 166.02. Thanks to put it back.")
+N5400 STOPRE
+N5410 GOTOB ERROR_R682
+N5420 ERROR_R683:  MSG("Parameter R683 has been changed. Nominal is  -1.87. Thanks to put it back.")
+N5430 STOPRE
+N5440 GOTOB ERROR_R683
+N5450 ERROR_R687:  MSG("Parameter R687 has been changed. Nominal is 5.74. Thanks to put it back.")
+N5460 STOPRE
+N5470 GOTOB ERROR_R687
+N5480 ERROR_R688:  MSG("Parameter R688 has been changed. Nominal is 28.81. Thanks to put it back.")
+N5490 STOPRE
+N5500 GOTOB ERROR_R688
+N5510 ERROR_R689:  MSG("Parameter R689 has been changed. Nominal is 28.81. Thanks to put it back.")
+N5520 STOPRE
+N5530 GOTOB ERROR_R689
+
+N5540 ERROR_R691:  MSG("Parameter R691 has been changed. Nominal is -21.67. Thanks to put it back.")
+N5550 STOPRE
+N5560 GOTOB ERROR_R691
+N5570 ERROR_R692:  MSG("Parameter R692 has been changed. Nominal is 127.13. Thanks to put it back.")
+N5580 STOPRE
+N5590 GOTOB ERROR_R692
+N5600 ERROR_R693:  MSG("Parameter R693 has been changed. Nominal is  117.84. Thanks to put it back.")
+N5610 STOPRE
+N5620 GOTOB ERROR_R693
+N5630 ERROR_R697:  MSG("Parameter R697 has been changed. Nominal is 60.68. Thanks to put it back.")
+N5640 STOPRE
+N5650 GOTOB ERROR_R697
+N5660 ERROR_R698:  MSG("Parameter R698 has been changed. Nominal is 122.23. Thanks to put it back.")
+N5670 STOPRE
+N5680 GOTOB ERROR_R698
+N5690 ERROR_R699:  MSG("Parameter R699 has been changed. Nominal is 122.23. Thanks to put it back.")
+N5700 STOPRE
+N5710 GOTOB ERROR_R699
+
+N5720 ERROR_R701:  MSG("Parameter R701 has been changed. Nominal is -57.29. Thanks to put it back.")
+N5730 STOPRE
+N5740 GOTOB ERROR_R701
+N5750 ERROR_R702:  MSG("Parameter R702 has been changed. Nominal is 99.72. Thanks to put it back.")
+N5760 STOPRE
+N5770 GOTOB ERROR_R702
+N5780 ERROR_R703:  MSG("Parameter R703 has been changed. Nominal is  131.50. Thanks to put it back.")
+N5790 STOPRE
+N5800 GOTOB ERROR_R703
+N5810 ERROR_R707:  MSG("Parameter R707 has been changed. Nominal is 51.71. Thanks to put it back.")
+N5820 STOPRE
+N5830 GOTOB ERROR_R707
+N5840 ERROR_R708:  MSG("Parameter R708 has been changed. Nominal is 193.24. Thanks to put it back.")
+N5850 STOPRE
+N5860 GOTOB ERROR_R708
+N5870 ERROR_R709:  MSG("Parameter R709 has been changed. Nominal is 193.24. Thanks to put it back.")
+N5880 STOPRE
+N5890 GOTOB ERROR_R709
+
+N5900 ERROR_R711:  MSG("Parameter R711 has been changed. Nominal is 57.37. Thanks to put it back.")
+N5910 STOPRE
+N5920 GOTOB ERROR_R711
+N5930 ERROR_R712:  MSG("Parameter R712 has been changed. Nominal is -118.33. Thanks to put it back.")
+N5940 STOPRE
+N5950 GOTOB ERROR_R712
+N5960 ERROR_R713:  MSG("Parameter R713 has been changed. Nominal is  114.99. Thanks to put it back.")
+N5970 STOPRE
+N5980 GOTOB ERROR_R713
+N5990 ERROR_R717:  MSG("Parameter R717 has been changed. Nominal is 135.48. Thanks to put it back.")
+N6000 STOPRE
+N6010 GOTOB ERROR_R717
+N6020 ERROR_R718:  MSG("Parameter R718 has been changed. Nominal is 9.07. Thanks to put it back.")
+N6030 STOPRE
+N6040 GOTOB ERROR_R718
+N6050 ERROR_R719:  MSG("Parameter R719 has been changed. Nominal is 9.07. Thanks to put it back.")
+N6060 STOPRE
+N6070 GOTOB ERROR_R719
+
+N6080 ERROR_R721:  MSG("Parameter R721 has been changed. Nominal is -R601. Thanks to put it back.")
+N6090 STOPRE
+N6100 GOTOB ERROR_R721
+N6110 ERROR_R722:  MSG("Parameter R722 has been changed. Nominal is R602. Thanks to put it back.")
+N6120 STOPRE
+N6130 GOTOB ERROR_R722
+N6140 ERROR_R723:  MSG("Parameter R723 has been changed. Nominal is  -R603. Thanks to put it back.")
+N6150 STOPRE
+N6160 GOTOB ERROR_R723
+N6170 ERROR_R727:  MSG("Parameter R727 has been changed. Nominal is 0. Thanks to put it back.")
+N6180 STOPRE
+N6190 GOTOB ERROR_R727
+N6200 ERROR_R728:  MSG("Parameter R728 has been changed. Nominal is 228. Thanks to put it back.")
+N6210 STOPRE
+N6220 GOTOB ERROR_R728
+N6230 ERROR_R729:  MSG("Parameter R729 has been changed. Nominal is 228. Thanks to put it back.")
+N6240 STOPRE
+N6250 GOTOB ERROR_R729
+
+N6260 RET
+

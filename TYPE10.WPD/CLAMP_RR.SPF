@@ -1,0 +1,49 @@
+;***************************************************************
+;MACHINE                     :SMW24478
+;DRAW  NR.                   :SV 70206563
+;NAME  OF  THE  PART         :E2 RK
+;PROGRAMER                   :XZR
+;DATE                        :2015.05.20
+;***************************************************************
+N10   R16=$A_DBB[21]
+N20   G4 F2
+N30   STOPRE
+N40   M87;Loading station guard closing request
+N50   M195; Fixture clamping cycle in progress
+N60   CASE R16 OF 1 GOTOF AX_A2 2 GOTOF AX_A3
+;----------------------------------------------------------------
+N70   ERR_TAV: MSG("A1 AXIS POSITION ERROR")
+N80   G4 F2
+N90   GOTOB ERR_TAV
+;---------------------------------------------------------------
+; CLAMP A2 SIDE - OP20
+N100   AX_A2:
+N110  M161 M182 M163 M164;266YV1OFF 266YV3OFF 266YV4OFF 266YV6OFF(HP)
+N120  G4 F0.5
+N130  M152 M153 M154;266YV2ON 266YV3ON 266YV4ON  
+N140  G4 F5
+N150  STOPRE
+N160  M193; FIXTURE SET AS CLAMPED 
+N170  M78 M82 ;UNCLAMP BRAKE A2/B1/B2
+N180  POS[B1]=87.36  POS[B2]=87.36 FA[B1]=10000 FA[B2]=10000
+N190  G1 A2=12.07 F10000
+N200  M79 M83 ;CLAMP BRAKE A2/B1/B2
+N210  RET
+;---------------------------------------------------------------
+; CLAMP A3 OP10
+N220  AX_A3:
+N230  M141 M122 M124 M123;265YV1OFF(HP) 265YV2OFF 265YV4OFF 265YV3OFF
+N240  G4 F0.5
+N250  M111 ;CLAMP R AND S
+N260  G4 F4
+N270  M114 M113  ;CLAMP T
+N280  G4 F4
+N290  STOPRE
+N300  M191; FIXTURE SET AS CLAMPED 
+N310  G4 F0.5
+N320  M80 M84;UNCLAMP BRAKE A2/B1/B2
+N330  POS[B3]=335  POS[B4]=335 FA[B3]=10000 FA[B4]=10000
+N340  G1 A3=90 F10000
+N350  M81 M85;CLAMP BRAKE A2/B1/B2
+
+N360  RET

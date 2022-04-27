@@ -1,0 +1,96 @@
+;*****************************************
+;MACHINE                     :SMW24962
+;DRAW  NR.                   :6866 449/450
+;NAME  OF  THE  PART         :BMW  G38
+;PROGRAMER                   :XZR
+;DATE                        :2014.10.08
+;***********************************************
+; ID TOOL SETTING
+;****************************************************************
+N10  IDP[1]=""
+N20  IDP[2]="T16"
+N30  IDP[3]=""
+N40  IDP[4]="T13"
+N50  IDP[5]="T12"
+N60  IDP[6]="T19"
+N70  IDP[7]="T17"
+N80  IDP[8]="T18"
+N90  IDP[9]="T01"
+N100 IDP[10]="PROBE"
+N110 IDP[11]="T23"
+N120 IDP[12]="T15"
+N130 IDP[13]="T24"
+N140 IDP[14]="T05"
+N150 IDP[15]="T11"
+N160 IDP[16]=""
+N170 IDP[17]=""
+N180 IDP[18]=""
+N190 IDP[19]=""
+N200 IDP[20]=""
+N210 IDP[21]="T07"
+N220 IDP[22]="T08"
+N230 IDP[23]="T06"
+N240 IDP[24]="T04"
+N250 IDP[25]="T03"
+N260 IDP[26]="T20"
+N270 IDP[27]="T09"
+N280 IDP[28]="T10"
+N290 IDP[29]="T22"
+N300 IDP[30]="T21"
+;****************************************************************
+; DUPLO NO.SETTING
+;****************************************************************
+N310 DUPLOP[1]=0
+N320 DUPLOP[2]=1
+N330 DUPLOP[3]=0
+N340 DUPLOP[4]=1
+N350 DUPLOP[5]=1
+N360 DUPLOP[6]=1
+N370 DUPLOP[7]=1
+N380 DUPLOP[8]=1
+N390 DUPLOP[9]=1
+N400 DUPLOP[10]=1
+N410 DUPLOP[11]=1
+N420 DUPLOP[12]=1
+N430 DUPLOP[13]=1
+N440 DUPLOP[14]=1
+N450 DUPLOP[15]=1
+N460 DUPLOP[16]=0
+N470 DUPLOP[17]=0
+N480 DUPLOP[18]=0
+N490 DUPLOP[19]=0
+N500 DUPLOP[20]=0
+N510 DUPLOP[21]=1
+N520 DUPLOP[22]=1
+N530 DUPLOP[23]=1
+N540 DUPLOP[24]=1
+N550 DUPLOP[25]=1
+N560 DUPLOP[26]=1
+N570 DUPLOP[27]=1
+N580 DUPLOP[28]=1
+N590 DUPLOP[29]=1
+N600 DUPLOP[30]=1
+N610 M94                                     ;MGUD READING BY PLC
+;****************************************************************
+; TOOL DATA LOADING
+;****************************************************************
+N620 STOPRE                                           ;MAGAZINE 1
+N630 R315=1
+N640 FOR R315=1 TO 30
+N650     R316=GETT(IDP[R315],DUPLOP[R315])
+N660     STOPRE
+N670     IF(R316>0)
+N680       $TC_MPP6[1,R315]=R316
+N690     ENDIF
+N700 ENDFOR
+N710 STOPRE                                           ;MAGAZINE 2
+N720 R315=1
+N730 FOR R315=1 TO 30
+N740     R316=GETT(IDP[R315],(DUPLOP[R315]+1))
+N750     STOPRE
+N760     IF(R316>0)
+N770       $TC_MPP6[2,R315]=R316
+N780     ENDIF
+N790 ENDFOR
+N800 M39
+N810 M30

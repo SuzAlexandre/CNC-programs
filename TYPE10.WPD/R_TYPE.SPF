@@ -1,0 +1,291 @@
+;***************************************************************
+;MACHINE                     :SMW24962
+;DRAW  NR.                   :6866 449/6866 450
+;NAME  OF  THE  PART         :BMW  G38
+;PROGRAMER                   :XZR
+;DATE                        :2016.03.22
+;***************************************************************
+;*** AXIS A3/A2 WORKING PARAMETERS
+N10 AA_CUT_PARAMETER
+;----------------------------------------------------------------
+;
+;----------------------------------------------------------------
+;*** AXIS A3/A2 ADJ PARAMETERS 
+N20 GOTOF "LOAD_ADJ_"<<R16
+N30 LOAD_ADJ_1:
+N40 AA_AXA3_ADJUSTMENT
+N50 GOTOF BEGIN
+
+N60 LOAD_ADJ_2:
+N70 AA_AXA2_ADJUSTMENT
+
+N80 BEGIN:
+N90 CHECK_R_ADJ
+;***************************LH  PARTS***************************
+;***************************************************************
+;
+;******************PART  REFERENCE OFFSET PARAMETERS************
+;
+;***************************************************************
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** BEARING FRONT SIDE  FACE -CALIPER FACE ***
+N100 R401=-47.91               ;X  AXE
+N110 R402=165                  ;Y  AXE
+N120 R403=-38.27               ;Z  AXE
+N130 R407=0                    ;A2/A3  AXE
+N140 R408=312                  ;B1/B3  AXE
+N150 R409=312                  ;B2/B4  AXE
+;----------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** ABS FACE ***
+N160 R411=4.16                 ;X  AXE
+N170 R412=6.69                 ;Y  AXE
+N180 R413=175.85               ;Z  AXE
+N190 R417=67.48               ;A2/A3  AXE
+N200 R418=84.5                ;B1/B3  AXE
+N210 R419=84.5                ;B2/B4  AXE
+;----------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** ACC SENSOR ***
+N220 R421=46.89               ;X  AXE
+N230 R422=164.66              ;Y  AXE
+N240 R423=40.92               ;Z  AXE
+N250 R427=0.49                ;A2/A3  AXE
+N260 R428=130.49              ;B1/B3  AXE
+N270 R429=130.49              ;B2/B4  AXE
+;-----------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** BEARING MOUNTING BACE SIDE ***
+N280 R431=-R401               ;X  AXE
+N290 R432=R402                ;Y  AXE
+N300 R433=-R403               ;Z  AXE
+N310 R437=0                   ;A2/A3  AXE
+N320 R438=132                 ;B1/B3  AXE
+N330 R439=132                 ;B2/B4  AXE
+;------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** WHEEL SPIN SENSOR ***
+N340 R441=-0.84               ;X  AXE
+N350 R442=90.87               ;Y  AXE
+N360 R443=150.76              ;Z  AXE
+N370 R447=79.31               ;A2/A3  AXE
+N380 R448=261.4               ;B1/B3  AXE 
+N390 R449=261.4               ;B2/B4  AXE
+;------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** CAMBER LINK *** 
+N400 R451=-10.9                ;X  AXE
+N410 R452=-131.59              ;Y  AXE
+N420 R453=116.41              ;Z  AXE
+N430 R457=118.41               ;A2/A3  AXE
+N440 R458=70.38              ;B1/B3  AXE
+N450 R459=70.38              ;B2/B3  AXE
+;------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** CONTROL ARM ***
+N460 R461=-0.6                ;X  AXE
+N470 R462=122.39              ;Y  AXE
+N480 R463=126.51              ;Z  AXE
+N490 R467=66.34               ;A2/A3  AXE
+N500 R468=261.18              ;B1/B3  AXE
+N510 R469=261.18              ;B2/B4  AXE
+;------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** DAMPER ***
+N520 R471=51.53               ;X  AXE
+N530 R472=162.01              ;Y  AXE
+N540 R473=45.63               ;Z  AXE
+N550 R477=4.34                ;A2/A3  AXE
+N560 R478=137.79              ;B1/B3  AXE
+N570 R479=137.79              ;B3/B4  AXE
+;------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** DRAIN SLOT ***
+N580 R481=-57.97              ;X  AXE
+N590 R482=166                 ;Y  AXE
+N600 R483=-8.2                ;Z  AXE
+N610 R487=4.08                ;A2/A3  AXE
+N620 R488=331.6               ;B1/B3  AXE
+N630 R489=331.6               ;B2/B4  AXE
+;------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** TOE LINK ***
+N640 R491=20.9                ;X  AXE
+N650 R492=120.99              ;Y  AXE
+N660 R493=126.14              ;Z  AXE
+N670 R497=65.45               ;A2/A3  AXE
+N680 R498=240.69              ;B1/B3  AXE
+N690 R499=240.69              ;B2/B4  AXE
+;-------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** TRACTION STRUT ***
+N700 R501=60.48               ;X  AXE
+N710 R502=87.92               ;Y  AXE
+N720 R503=139.99              ;Z  AXE
+N730 R507=54.36               ;A2/A3  AXE
+N740 R508=161.11              ;B1/B3  AXE
+N750 R509=161.11              ;B2/B4  AXE
+;-------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** TRAILING ARM *** 
+N760 R511=-61.18               ;X  AXE
+N770 R512=-108.41              ;Y  AXE
+N780 R513=124.46              ;Z  AXE
+N790 R517=132.48               ;A2/A3  AXE
+N800 R518=346.78              ;B1/B3  AXE
+N810 R519=346.78              ;B3/B4  AXE
+;-------------------------------------------------------------------
+;LH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** CALIPER  BACK  SIDE FACE ***
+N820 R521=-R401                ;X  AXE
+N830 R522=R402                 ;Y  AXE
+N840 R523=-R403                ;Z  AXE
+N850 R527=0                   ;A2/A3  AXE
+N860 R528=132                 ;B1/B3  AXE
+N870 R529=132                 ;B2/B4  AXE
+;-------------------------------------------------------------------
+;*******************************************************************
+;***************************RH  PARTS*******************************
+;*******************************************************************
+;******************PART  REFERENCE OFFSET PARAMETERS****************
+;
+;*******************************************************************
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** BEARING FRONT SIDE  FACE - CALIPER FACE ***
+N880 R601=45.24                ;X  AXE
+N890 R602=165                  ;Y  AXE
+N900 R603=-35.3                ;Z  AXE
+N910 R607=0                    ;A2/A3  AXE
+N920 R608=48                   ;B1/B3  AXE
+N930 R609=48                   ;B2/B4  AXE
+;-------------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** ABS  FACE *** 
+N940 R611=-14.1                ;X  AXE
+N950 R612=1.5                  ;Y  AXE 
+N960 R613=174.12               ;Z  AXE
+N970 R617=70.88                ;A2/A3  AXE
+N980 R618=265.81               ;B1/B3  AXE
+N990 R619=265.81               ;B2/B4  AXE
+;------------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** ACC SENSOR ***
+N1000 R621=-44.32               ;X  AXE
+N1010 R622=164.6                ;Y  AXE
+N1020 R623=37.72                ;Z  AXE
+N1030 R627=0.62                 ;A2/A3  AXE
+N1040 R628=229.46               ;B1/B3  AXE
+N1050 R629=229.46               ;B2/B3  AXE
+;-----------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** BEARING MOUNTING BACK SIDE ***
+N1060 R631=-R601                ;X  AXE
+N1070 R632=R602                 ;Y  AXE
+N1080 R633=-R603                 ;Z  AXE
+N1090 R637=0                   ;A2/A3  AXE
+N1100 R638=228                 ;B1/B3  AXE
+N1110 R639=228                 ;B2/B4  AXE
+;-----------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** WHEEL SPIN SENSOR ***
+N1120 R641=-10.65              ;X  AXE
+N1130 R642=96.9                ;Y  AXE
+N1140 R643=144.96              ;Z  AXE
+N1150 R647=75.1                ;A2/A3  AXE
+N1160 R648=110.73              ;B1/B3  AXE
+N1170 R649=110.73              ;B2/B4  AXE
+;----------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** CAMBER LINK ***
+N1180 R651=13.25             ;X  AXE
+N1190 R652=-136.48             ;Y  AXE
+N1200 R653=108.23             ;Z  AXE
+N1210 R657=122.89              ;A2/A3  AXE
+N1220 R658=293.39             ;B1/B3  AXE
+N1230 R659=293.39             ;B2/B4  AXE
+;----------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** CONTROL ARM *** 
+N1240 R661=-4.92              ;X  AXE
+N1250 R662=127.34             ;Y  AXE
+N1260 R663=119.49             ;Z  AXE
+N1270 R667=62.29              ;A2/A3  AXE
+N1280 R668=104.96             ;B1/B3  AXE
+N1290 R669=104.96             ;B2/B4  AXE
+;---------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** DAMPER ***
+N1300 R671=-48.76             ;X  AXE
+N1310 R672=162.62             ;Y  AXE
+N1320 R673=41.17              ;Z  AXE
+N1330 R677=3.82               ;A2/A3  AXE
+N1340 R678=221.85             ;B1/B3  AXE
+N1350 R679=221.85             ;B2/B4  AXE
+;--------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** DRANIN SLOT ***
+N1360 R681=54.33              ;X  AXE
+N1370 R682=166.02             ;Y  AXE
+N1380 R683=-1.87              ;Z  AXE
+N1390 R687=5.74               ;A2/A3  AXE
+N1400 R688=28.81              ;B1/B3  AXE
+N1410 R689=28.81              ;B2/B4  AXE
+;-------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** TOE LINK ***
+N1420 R691=-21.67            ;X  AXE
+N1430 R692=127.13            ;Y  AXE
+N1440 R693=117.84            ;Z  AXE
+N1450 R697=60.68             ;A2/A3  AXE
+N1460 R698=122.23            ;B1/B3  AXE
+N1470 R699=122.23            ;B2/B4  AXE
+;-------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** TRACTION STRUT***
+N1480 R701=-57.29            ;X  AXE
+N1490 R702=99.72             ;Y  AXE
+N1500 R703=131.50            ;Z  AXE
+N1510 R707=51.71             ;A2/A3  AXE
+N1520 R708=193.24            ;B1/B3  AXE
+N1530 R709=193.24            ;B2/B4  AXE
+;-------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;***TRAILING  ARM ***
+N1540 R711=57.37            ;X  AXE
+N1550 R712=-118.33            ;Y  AXE
+N1560 R713=114.99            ;Z  AXE
+N1570 R717=135.48             ;A2/A3  AXE
+N1580 R718=9.07            ;B1/B3  AXE
+N1590 R719=9.07            ;B2/B4  AXE
+;-------------------------------------------------------------
+;RH PART REFERENCE OFFSET BEARING CENTER AND FACE 
+;*** CALIPER BACK SIDE FACE ***
+N1600 R721=-R601              ;X  AXE
+N1610 R722=R602               ;Y  AXE
+N1620 R723=-R603              ;Z  AXE
+N1630 R727=0                 ;A2/A3  AXE
+N1640 R728=228               ;B1/B3  AXE
+N1650 R729=228               ;B2/B4  AXE
+;
+N1660 CHECK_R_TYPE
+
+
+;***********************************************************
+; SETTING TIME WORK ON AXIS A3/A2
+;***********************************************************
+N1670 $A_DBW[0]=10                    ;TABLE CYCLE TIME
+N1680 $A_DBW[2]=530                 ;WORK TIME AXIS A3
+N1690 $A_DBW[4]=530                  ;WORK TIME AXIS A2
+N1700 $A_DBB[6]=4                    ;PARTS PRESENT ON AXIS A3
+N1710 $A_DBB[7]=4                    ;PARTS PRESENT ON AXIS A2
+N1720 R90=5000                       ; SPEED TOOL FOR WARMUP
+N1730 R98=4    ; TOOL POSITION FOR WARMUP - T13/5.5MM STEP DRILL
+
+;***********************************************************
+; SETTING PARAMETERS FOR A1 ROTATION 
+;***********************************************************
+
+
+N1740 R_TBL
+
+N1750 RET

@@ -1,0 +1,35 @@
+;***************************************************************
+;MACHINE                     :SMW24962
+;DRAW  NR.                   :6866 449/6866 450
+;NAME  OF  THE  PART         :BMW  G38
+;PROGRAMER                   :XZR
+;DATE                        :2016.03.22
+;****************************************************************
+;*             MACHINE - TEST FOR AUTOMATIC CYCLE               *
+;*        MACHINE - AXIS A3-B3-B4+A2-B1-B2 SP1 to SP2           *
+;****************************************************************
+; PARAMETER FOR ROTATION A1
+;****************************************************************
+;-------------------------------------------
+; PARAMETER FOR ROTATION A1 0-->180
+;
+N10  PA2_WK_TO_LD=150          ;POS. AXE A2 WORK TO LOAD
+N20  PA3_LD_TO_WK=150          ;POS. AXE A3 LOAD TO WORK
+N30  PB1_WK_TO_LD=180          ;POS. AXE B1 WORK TO LOAD
+N40  PB2_WK_TO_LD=180          ;POS. AXE B2 WORK TO LOAD
+N50  PB3_LD_TO_WK=180          ;POS. AXE B3 LOAD TO WORK
+N60  PB4_LD_TO_WK=180          ;POS. AXE B4 LOAD TO WORK
+;-------------------------------------------
+; PARAMETER FOR ROTATION A1 180-->0
+;
+N70  PA2_LD_TO_WK=150          ;POS. AXE A2 LOAD TO WORK
+N80  PA3_WK_TO_LD=150          ;POS. AXE A3 WORK TO LOAD
+N90  PB1_LD_TO_WK=180          ;POS. AXE B1 LOAD TO WORK
+N100 PB2_LD_TO_WK=180          ;POS. AXE B2 LOAD TO WORK
+N110 PB3_WK_TO_LD=180          ;POS. AXE B3 WORK TO LOAD
+N120 PB4_WK_TO_LD=180          ;POS. AXE B4 WORK TO LOAD
+;
+N130 MOVE_AX=0               ;0 -> ROTATION AXES A/B AFTER AXE A1
+N140                         ;1 -> ROTATION AXES A/B/A1 SIMULTAN.
+N150 RET
+
